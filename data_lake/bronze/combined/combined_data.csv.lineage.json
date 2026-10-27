@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "stage": "bronze",
+  "created_at_utc": "2026-09-07T20:38:07.062966Z",
+  "run_id": "20260907T200810Z__b1b76500f9ea",
+  "input_manifest_path": "data_lake/manifests/raw_ingestion/raw_ingestion_20260907T200810Z__b1b76500f9ea.json",
+  "input_manifest_checksum": "f765a819b4ae366e4723f352d0d18370fbff3502ef60ea55b4cdaaef1011e965",
+  "output": {
+    "path": "data_lake/bronze/combined/combined_data.csv",
+    "sha256": "e4f7bb9f7d46af477e95fe3755214fdf12928ca365870d572f3f320b8dff95af",
+    "size_bytes": 19769425
+  },
+  "input_files": [
+    {
+      "path": "data_lake/raw/source_data/monitiring-2021-december.csv",
+      "sha256": "fc01176f2b9ae8d2220286a3218638c6ee1454d156423a2a228cb34475ccc1df"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2003-2007.csv",
+      "sha256": "b0b04b6faea60a067f047c41b884622a536a1a76c3531f3b102962cc4278bf7f"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2008-2012.csv",
+      "sha256": "05b9db49ff7aae6cf38ea2636a698abc8a75e38203a7c1bddef7c511cb14a914"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2012-2015.csv",
+      "sha256": "f45b3d9036d717e060f1951af9acea004ea60f06df360aff082f2b0330f6f26a"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2016-2018.csv",
+      "sha256": "1031512ae54b588321c3148a322ee7db7ed0299c01a2bbf585d38e65c335d1fd"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2019-q1.csv",
+      "sha256": "cb05269a60de1536f008e202835954c16ee3b36f26bc4cd1f1e7da43eef886dc"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2019-q2.csv",
+      "sha256": "44e67cc7585f973268d68b79f2268e12780cb76c6bae77ab8f0661d69a702c14"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2019-q3.csv",
+      "sha256": "18013adf8f2168c1ed88e4f1953a080aace39dc2ee4ea34233cbcee660f8dd85"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2019-q4.csv",
+      "sha256": "826500c712b320d8740b3e50726cc73ac65b9c5685697218663a8bd3a7cb07a6"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2020-q1.csv",
+      "sha256": "316f0d9d6d5af569f7144929209cf5400e180952150c3e7ee11d4028ef5b7bb9"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2020-q2.csv",
+      "sha256": "a856a4f6448e52ad18a84c9836807a56f0d2f0ac6ba69c4f3268676da1d0dfad"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2020-q3.csv",
+      "sha256": "b605bcfc6c208a44734f261763acff735b4d98d5cfd75711ffe39e3087f77901"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2020-q4.csv",
+      "sha256": "eaf6e12def18da688b66a97056ac486c2e4a4a901bd637dda44c266e330c80b4"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2021-april.csv",
+      "sha256": "be3dd042a2148d2b3e7315790d5a81f7531cd6d2989dbea1a0aa6ddfeeddb1cf"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2021-august.csv",
+      "sha256": "8af4497928c0ec0c5d1e765f28c44b2fc7befa13b8829942ebfa07801e930f1c"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2021-july.csv",
+      "sha256": "1d8084db429991f353d7ff39c680ae4a7274cd7dc15c6d9ab9fcbfb07f7d95e5"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2021-june.csv",
+      "sha256": "4501a9966454dad69539980e5848311cf090821fc31569d386d2912517055115"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2021-may.csv",
+      "sha256": "1f09250183444c51e432e3c9cf17fe7b6a2cae6f964bc554e3050634f2263596"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2021-november.csv",
+      "sha256": "7f08823708412e767835ef023b19f16ef881637a335afbfbc089252c2bf7c34f"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2021-october.csv",
+      "sha256": "feded96c2e62e3a222a6e4646ba7851858bddb7277b57426927766c039e7a053"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2021-q1.csv",
+      "sha256": "31aa3c30c6bef3d542b1991b66354bbdc4babe8b327f4e13a7972a14a903b068"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2021-september.csv",
+      "sha256": "3404ab0f2da445f4946750de749d8ddda06474252a036944c2aee14afd6896e7"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2022-april.csv",
+      "sha256": "0d404c3f809bb2cd94784090f7f4822cbd435838593f4507a3aaa5dd49d012de"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2022-august.csv",
+      "sha256": "c86ffedf54a7430ce4e96f14edefa0946c51562db02544247392a17d6f512d48"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2022-december.csv",
+      "sha256": "991ed7198277e76f92083cc01ac152cb57c7a2aba2f939fda02d89235c0d37c6"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2022-february.csv",
+      "sha256": "0e23759bd2faab44610c074713af070d8632f6dd9550a06974a6b5eb5f3d11ad"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2022-january.csv",
+      "sha256": "99306426b55a7a17449ec563ab2f3627c666ed97294a7a3d7630c687f2b73691"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2022-july.csv",
+      "sha256": "2b4b6705ce771fa81defe7d3735176ea0ca9743b58d94647dd2963ddce561711"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2022-june.csv",
+      "sha256": "de73cf63cf62a85b03f707655d013b33b3c0a447a460ca75662e03905adc6948"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2022-march.csv",
+      "sha256": "b9514dc9905b53b7284c1e5ce314260968cf0931a861ed90d16fb7b8ffef42f5"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2022-may.csv",
+      "sha256": "ab8740dbfa574c96e250ec7d29b729f44b4ae24376b0e9da249239177b932ec7"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2022-november.csv",
+      "sha256": "a7e1eb2838d7f013c6fe05e5d2522086c5f82b84b7eb2db5c2f43c03b1d442fb"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2022-october.csv",
+      "sha256": "017bcecd42ab98227c9f568823ddfb4eaa9b4b925874e2f12422574b75e6a3ad"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2022-september.csv",
+      "sha256": "949240e96eb8ef7585f2f4c9bedcc0cb8f3c71a1c3913e67d8121d3ab09df4e0"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2023-april.csv",
+      "sha256": "0b6c37a1bba2d2a069b4935bec65815b76d691c2995e90017548e16ca11d8788"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2023-august.csv",
+      "sha256": "35ddd10bb4eb695f48c1c374ff4a11f0d22e7f875aaee8fb4268f3ec608d72b8"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2023-december.csv",
+      "sha256": "30cdaa1d4988b256f9e5e54adba976d7ebf2f19dbda6a3f77d87e63cd4cae360"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2023-february.csv",
+      "sha256": "b0fef531616394ec51134b27f55c81e2d635863d2d6661ebe71bedfe61c91c6f"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2023-january.csv",
+      "sha256": "9a981f0b94d9a1d584eb258bd61411e570ca2833ebe3ee7375a17cd15f5c928d"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2023-july.csv",
+      "sha256": "e4bd1be22905eb91b852fb7db0eea314d8138fbf86942a81d814b3f0e94541d9"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2023-june.csv",
+      "sha256": "f09a8fe424b8f0448d063e4e851e951cdd0bae2ef21126f0b3c52d8612e55bca"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2023-march.csv",
+      "sha256": "cc54e507a9123ba142de871c509188755dd30e13564e03803d591de01f7c655f"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2023-may.csv",
+      "sha256": "0b68764b7a8eb08c93ac7122020dd947438cd912b458d2e3b822eba4b739bf54"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2023-november.csv",
+      "sha256": "90d82279df023d3021c699ec0d8c752a067a28cf507f783f2da5abbda010fcbb"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2023-oktober.csv",
+      "sha256": "1402a602c3c032350a5fe5dcf192ccda9211f4ed88a7bc1aee550ce4ce01c650"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2023-september.csv",
+      "sha256": "178bc1f7e52a30ae392c45aedd1e0f10db765716d3caef013c498549078123e4"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2024-february.csv",
+      "sha256": "bc0837af2026dd591527ab3e7c1d14d798416e8f8ec682e16ea7f777ba929c63"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2024-january.csv",
+      "sha256": "5d65f7a64cc8d091f6be33106b62105f474e9c6168a3aba4e39690980f1b623f"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2024-march.csv",
+      "sha256": "b27e3cacba13308ecabe730a7331b2fec812716ba289274ffbfe087e150a9a09"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2025-february.csv",
+      "sha256": "eaab5187afc2693cc845a9409b6530f73e3bb2aec79013ef735f0900b0b5d215"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2025-september.csv",
+      "sha256": "01fba67eedd1deb5b1398a9490a0389b11a5fdefe0db04081fe3c4157d551ff9"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2026-august.csv",
+      "sha256": "7ba8c4830e862e8133ea676d0804d2fe4dc308702c07d7e141371d718e909827"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2026-january.csv",
+      "sha256": "58c5e690d7c33d4d2aa90bb35a24c201b2098fc414b38997bd85d91bdfa0eb2d"
+    },
+    {
+      "path": "data_lake/raw/source_data/monitoring-2026-july.csv",
+      "sha256": "d734a6e1fc0f096fd51b142f2a3bcf2143318bf90e6f0d06bdc28f69015eb12e"
+    }
+  ],
+  "metadata": {
+    "table": "combined_data.csv",
+    "row_count": 49955
+  }
+}

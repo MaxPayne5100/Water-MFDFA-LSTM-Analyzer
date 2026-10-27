@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "stage": "forecast_python",
+  "created_at_utc": "2026-09-15T10:48:26.183771Z",
+  "run_id": "20260907T200810Z__b1b76500f9ea",
+  "input_manifest_path": "data_lake/manifests/raw_ingestion/raw_ingestion_20260907T200810Z__b1b76500f9ea.json",
+  "input_manifest_checksum": "f765a819b4ae366e4723f352d0d18370fbff3502ef60ea55b4cdaaef1011e965",
+  "output": {
+    "path": "data_lake/forecasts/Forecasted_Dnipro_BSK5_100_days_LSTM.csv",
+    "sha256": "9e754ad704695f8e61e2c650269cd970441fb1d014e7f2b65fcaedacb1c5d6d4",
+    "size_bytes": 5316
+  },
+  "input_files": [
+    {
+      "path": "data_lake/curated/time_series/Dnipro_BSK5_ts.csv",
+      "sha256": "72d2593a86296937269e1ccc2f9a8d529a00846a4946b3b99bea4c9555baafb7"
+    },
+    {
+      "path": "data_lake/features/mfdfa/MFDFA_Dnipro_BSK5_150_window.csv",
+      "sha256": "42ba5c176e9dc8f6e8504c17e212c3e5f515492b9fe725d49d6bede2f01273ee"
+    },
+    {
+      "path": "data_lake/features/mfdfa/SpectrumLabels_Dnipro_BSK5_150_window.csv",
+      "sha256": "b9048ecc49da05d2942d65aa3f293431313b688e689350240b94bee2935fef20"
+    }
+  ],
+  "metadata": {
+    "artifact_type": "holdout_forecast_csv",
+    "forecast_kind": "holdout_evaluation",
+    "horizon": 100
+  }
+}

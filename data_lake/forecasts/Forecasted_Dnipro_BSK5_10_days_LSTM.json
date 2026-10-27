@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "artifact_type": "holdout_forecast_metadata",
+  "forecast_kind": "holdout_evaluation",
+  "created_at_utc": "2026-10-05T21:54:54.308849Z",
+  "run_id": "20260907T200810Z__b1b76500f9ea",
+  "input_manifest_path": "data_lake/manifests/raw_ingestion/raw_ingestion_20260907T200810Z__b1b76500f9ea.json",
+  "input_manifest_checksum": "f765a819b4ae366e4723f352d0d18370fbff3502ef60ea55b4cdaaef1011e965",
+  "river": "Dnipro",
+  "indicator": "BSK5",
+  "horizon": 10,
+  "forecast_dates": [
+    "2018-08-02",
+    "2018-08-21",
+    "2018-09-04",
+    "2018-09-19",
+    "2018-10-08",
+    "2018-10-24",
+    "2018-11-05",
+    "2018-11-22",
+    "2018-12-04",
+    "2018-12-20"
+  ],
+  "model": "LSTM + Optuna RMSE baseline",
+  "best_params": {
+    "lookback": 5,
+    "units": 48,
+    "dropout_rate": 0.27161518366395826,
+    "learning_rate": 0.004238119644895339,
+    "batch_size": 16,
+    "top_k": 16
+  },
+  "selected_features": [
+    "Slope",
+    "Entropy",
+    "Width",
+    "Kurtosis",
+    "B",
+    "Delta_f_alpha",
+    "beta",
+    "Alpha_0",
+    "A",
+    "beta2",
+    "Skew",
+    "Delta_H",
+    "Volatility",
+    "Delta_alpha",
+    "Mean",
+    "H"
+  ],
+  "best_cv_rmse": 0.8025547802997229,
+  "test_rmse": 1.2910878517851745,
+  "feature_stability": [
+    {
+      "Feature": "H",
+      "Mean_Importance": 0.008583679750987413,
+      "Mean_Rank": 2.0,
+      "Selection_Frequency": 1.0
+    },
+    {
+      "Feature": "A",
+      "Mean_Importance": 0.008945226968825019,
+      "Mean_Rank": 2.6666666666666665,
+      "Selection_Frequency": 1.0
+    },
+    {
+      "Feature": "Delta_f_alpha",
+      "Mean_Importance": 0.003215401233864834,
+      "Mean_Rank": 5.666666666666667,
+      "Selection_Frequency": 1.0
+    },
+    {
+      "Feature": "Entropy",
+      "Mean_Importance": 0.0021154606782059085,
+      "Mean_Rank": 7.0,
+      "Selection_Frequency": 1.0
+    },
+    {
+      "Feature": "Alpha_0",
+      "Mean_Importance": 0.0012449157488882204,
+      "Mean_Rank": 7.0,
+      "Selection_Frequency": 1.0
+    },
+    {
+      "Feature": "Slope",
+      "Mean_Importance": 0.021178451725323743,
+      "Mean_Rank": 7.666666666666667,
+      "Selection_Frequency": 1.0
+    },
+    {
+      "Feature": "beta2",
+      "Mean_Importance": 0.001628014870563236,
+      "Mean_Rank": 7.666666666666667,
+      "Selection_Frequency": 1.0
+    },
+    {
+      "Feature": "Mean",
+      "Mean_Importance": 0.0015193834950057103,
+      "Mean_Rank": 7.666666666666667,
+      "Selection_Frequency": 1.0
+    },
+    {
+      "Feature": "Width",
+      "Mean_Importance": 0.0012851103537323031,
+      "Mean_Rank": 8.0,
+      "Selection_Frequency": 1.0
+    },
+    {
+      "Feature": "Kurtosis",
+      "Mean_Importance": -0.0004568162056527659,
+      "Mean_Rank": 9.333333333333334,
+      "Selection_Frequency": 1.0
+    },
+    {
+      "Feature": "Skew",
+      "Mean_Importance": -0.0008169104283517987,
+      "Mean_Rank": 10.0,
+      "Selection_Frequency": 1.0
+    },
+    {
+      "Feature": "Delta_alpha",
+      "Mean_Importance": 5.6849650528552634e-05,
+      "Mean_Rank": 11.0,
+      "Selection_Frequency": 1.0
+    },
+    {
+      "Feature": "beta",
+      "Mean_Importance": -0.0015138226175389808,
+      "Mean_Rank": 11.333333333333334,
+      "Selection_Frequency": 1.0
+    },
+    {
+      "Feature": "Delta_H",
+      "Mean_Importance": -0.0021139170480058054,
+      "Mean_Rank": 12.333333333333334,
+      "Selection_Frequency": 1.0
+    },
+    {
+      "Feature": "Volatility",
+      "Mean_Importance": -0.004006170530147183,
+      "Mean_Rank": 12.333333333333334,
+      "Selection_Frequency": 1.0
+    },
+    {
+      "Feature": "B",
+      "Mean_Importance": -0.0042253506197254325,
+      "Mean_Rank": 14.333333333333334,
+      "Selection_Frequency": 1.0
+    }
+  ],
+  "prediction_csv": "Forecasted_Dnipro_BSK5_10_days_LSTM.csv",
+  "training_metadata": {}
+}

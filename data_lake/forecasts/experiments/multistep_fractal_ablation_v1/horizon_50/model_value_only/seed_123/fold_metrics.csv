@@ -1,0 +1,4 @@
+fold,train_samples,validation_samples,validation_target_start,validation_target_end,value_rmse,fractional_rmse_standardized,best_epoch,selected_features,feature_ranking_method,feature_ranking_train_samples,feature_ranking_validation_samples,fractional_order,fractional_truncation,training_seconds,trained_epochs
+1,50,5,258,311,0.5861207842826843,,20,"[""Slope"", ""Entropy"", ""Skew"", ""Mean"", ""Width"", ""Kurtosis"", ""Alpha_0"", ""Volatility"", ""B"", ""H""]",in_sample_impurity,50,0,,,8.338997356000618,40
+2,55,4,263,315,0.5324890613555908,,19,"[""Entropy"", ""Slope"", ""Skew"", ""Mean"", ""Width"", ""Alpha_0"", ""Kurtosis"", ""Volatility"", ""B"", ""beta""]",in_sample_impurity,55,0,,,8.672151268001471,39
+3,59,4,267,319,0.5435904264450073,,1,"[""Entropy"", ""Skew"", ""Slope"", ""Width"", ""Mean"", ""Alpha_0"", ""Volatility"", ""B"", ""Kurtosis"", ""beta""]",in_sample_impurity,59,0,,,6.387292225001147,21

@@ -1,0 +1,10 @@
+# Airflow orchestration environment for Python 3.12.
+#
+# Keep Airflow separate from the application environment (.venv-linux). The
+# application uses TensorFlow/Optuna; Airflow is an independent scheduler and
+# task runner. The versioned Apache constraint set pins Airflow's transitive
+# dependencies as well as Airflow itself.
+--constraint https://raw.githubusercontent.com/apache/airflow/constraints-3.3.1/constraints-3.12.txt
+
+apache-airflow==3.3.1
+apache-airflow-providers-standard==1.17.0

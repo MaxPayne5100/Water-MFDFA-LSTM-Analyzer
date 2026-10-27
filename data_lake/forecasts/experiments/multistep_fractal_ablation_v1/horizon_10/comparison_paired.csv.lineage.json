@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "stage": "forecast_python_multistep_experiment",
+  "created_at_utc": "2026-10-06T22:05:05.075528Z",
+  "run_id": "20260907T200810Z__b1b76500f9ea",
+  "input_manifest_path": "data_lake/manifests/raw_ingestion/raw_ingestion_20260907T200810Z__b1b76500f9ea.json",
+  "input_manifest_checksum": "f765a819b4ae366e4723f352d0d18370fbff3502ef60ea55b4cdaaef1011e965",
+  "output": {
+    "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/comparison_paired.csv",
+    "sha256": "b605b93cdfc8a7afc2ab9f8abf0ec45ddaaa0d9663b4683a3171ba40a2fecd05",
+    "size_bytes": 679
+  },
+  "input_files": [
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_only/seed_7/forecast.csv",
+      "sha256": "e1fd6a746bb0320b4f1a30418cd191590cef0634203f0b542d7dabf94bf98c5b"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_only/seed_7/metadata.json",
+      "sha256": "096990ca7b83b365059045a4abb4c7b9b6b2663270633ffbf9861a1ef03ad124"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_only/seed_21/forecast.csv",
+      "sha256": "be8b3efe363ffa9d070fe7b19a2446256843c42d398f630d365a408bd0e3e249"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_only/seed_21/metadata.json",
+      "sha256": "0faf64cb2c63187f8d1394db70d5c225f58a1b1d8cf45e5364b0a72eb35730c7"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_only/seed_42/forecast.csv",
+      "sha256": "00a5c8cdfd9b09e39aafe3cfcdbfdcd7bf16e89dc06b7e7404d5b46c0bf138e2"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_only/seed_42/metadata.json",
+      "sha256": "db91ee405d5dd87f665288b4ba8ca0d827858926f354325b9c5a8990e06405d6"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_only/seed_84/forecast.csv",
+      "sha256": "89c2ec425ff1f5f1f51ea365b7233dcbc5076e3c09a42706d432962bf96bf477"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_only/seed_84/metadata.json",
+      "sha256": "52e805c7cca06c61dedaefa0b94709756be6f076afed3c525eea31fb1e07328b"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_only/seed_123/forecast.csv",
+      "sha256": "690e5dcf300ed362172e0908b075a285d430c6b3ac75336b4a302d80d18d0e22"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_only/seed_123/metadata.json",
+      "sha256": "bcd038c7e979666eaf89764d493c3f1610dccbbcf8c34f1791000bc635899a70"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional/seed_7/forecast.csv",
+      "sha256": "28c37598d88b09628eb966dec4ec29d3fbe7b71b76179a8a59f512e3f23f7530"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional/seed_7/metadata.json",
+      "sha256": "c2b65367f1f262bca707d97f99869a64318dbccc0ffa8ffdd6ba8668b5e01fca"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional/seed_21/forecast.csv",
+      "sha256": "8efdaa58bc8350807b57826b61f46b20c20ccbf8353022506a65c0d48a4c7440"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional/seed_21/metadata.json",
+      "sha256": "3ff26496e9c7b4a4a7b67d1e227a4c2c34d9578c777a2b03c8922f907c4eda51"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional/seed_42/forecast.csv",
+      "sha256": "cacb01edf966bb98cec7f373b39625ddce877f0cc220a4a06cfbd7bf595bbf9e"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional/seed_42/metadata.json",
+      "sha256": "bb39af53cd3992545df1f1d0ffeb27eb17978a6dc4a7200ad5681959fc592157"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional/seed_84/forecast.csv",
+      "sha256": "d00382b659b1cb2a13c8552578c1fd16356a3adb720366eff12beb04366813a4"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional/seed_84/metadata.json",
+      "sha256": "ac67e820a866d50eb89e109ca98d07d28d2a85e41be0e101e821590b6e30867d"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional/seed_123/forecast.csv",
+      "sha256": "435b58cf7f50d1f9e0d2e33077a9a14123a9c682923fbec606e707aa7c1022e4"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional/seed_123/metadata.json",
+      "sha256": "f14a156cf577f97d87e90f45ddf390a93b0baebfccbe1e7560d5bad7cbeaebb0"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional_spectrum/seed_7/forecast.csv",
+      "sha256": "820c1153c93186383d6b2e9fad7d14e5b2154f647b25c802a6beab52c0769cea"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional_spectrum/seed_7/metadata.json",
+      "sha256": "9e329738e332f430d3173b3eda664d3ac2cc37909d845d6ab35a407baf2280d7"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional_spectrum/seed_21/forecast.csv",
+      "sha256": "69829d1c51107863c1562e72e110f7cd0a9407fdbb2e3aed3789f6ff7c39aa47"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional_spectrum/seed_21/metadata.json",
+      "sha256": "a39fae08380c6f6d260664ea2cd268557cc8cb034191eaac3b3ea553ff885ff9"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional_spectrum/seed_42/forecast.csv",
+      "sha256": "0020a085bdd21a05bc336ec1619137445ac04cd435d413002dfe9935805913d7"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional_spectrum/seed_42/metadata.json",
+      "sha256": "fc6e8a911c3b1ad16465df793df3149c74d9ba43c6027cf5785d35e458432d69"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional_spectrum/seed_84/forecast.csv",
+      "sha256": "b1b63a5f47d256af7ecd3ddbf6617eba960ce5106e0a7423405c793ecf6b7f57"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional_spectrum/seed_84/metadata.json",
+      "sha256": "0fa8dfdb267c0eec25152c4e5dd119d0a3b048a7027b0f8fd2c609022100e502"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional_spectrum/seed_123/forecast.csv",
+      "sha256": "0896816439d3b97b85c7a6b49969a90b6fd2cd33eaa70ca48c377e40c9dde8f8"
+    },
+    {
+      "path": "data_lake/forecasts/experiments/multistep_fractal_ablation_v1/horizon_10/model_value_fractional_spectrum/seed_123/metadata.json",
+      "sha256": "7d404af43fab886475bd4b55e2640a3743c2c40ad8ee321182d1b2313cf495f8"
+    }
+  ],
+  "metadata": {
+    "artifact_type": "paired_comparison_csv"
+  }
+}

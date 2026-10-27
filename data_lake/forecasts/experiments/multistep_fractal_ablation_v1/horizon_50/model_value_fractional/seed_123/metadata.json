@@ -1,0 +1,214 @@
+{
+  "scientific_role": "Value plus fractional-difference RMSE, balanced with GradNorm",
+  "horizon": 50,
+  "rmse_aggregation": "global over all samples and horizon positions",
+  "evaluation_value_rmse": 1.1334588527679443,
+  "evaluation_origin_count": 5,
+  "evaluation_origin_stride": 10,
+  "evaluation_origins": [
+    320,
+    330,
+    340,
+    350,
+    360
+  ],
+  "evaluation_policy": "one fixed model trained before the first rolling origin; no refit inside the evaluation period",
+  "parameters": {
+    "encoder_units": 64,
+    "decoder_units": 64,
+    "dropout": 0.1,
+    "learning_rate": 0.0006419892064825209,
+    "batch_size": 16,
+    "lookback": 10,
+    "top_k": 10
+  },
+  "final_epochs": 21,
+  "timing": {
+    "clock": "time.perf_counter monotonic wall clock",
+    "unit": "seconds",
+    "scope": "model build, GradNorm calibration when applicable, and model.fit; excludes preprocessing, prediction, and artifact publication",
+    "cross_validation_training_seconds": 234.0452422820017,
+    "final_training_seconds": 75.04639938999753,
+    "total_training_seconds": 309.09164167199924,
+    "cross_validation_trained_epochs": 104,
+    "final_trained_epochs": 21,
+    "total_trained_epochs": 125
+  },
+  "selected_features": [
+    "H",
+    "Delta_alpha",
+    "Volatility",
+    "Slope",
+    "Kurtosis",
+    "Skew",
+    "Delta_H",
+    "beta",
+    "Alpha_0",
+    "A"
+  ],
+  "feature_ranking": {
+    "method": "purged_permutation",
+    "training_samples": 40,
+    "validation_samples": 23
+  },
+  "feature_scaler_mean": [
+    0.9943748202707087,
+    0.9749317836016417,
+    1.5644598989614418,
+    -0.0002669858400297796,
+    24.784362510272434,
+    3.6231927133032253,
+    0.7741972305944987,
+    0.8620890432170459,
+    1.1952117826257433,
+    2.949658093069281
+  ],
+  "feature_scaler_scale": [
+    0.047040539135595145,
+    0.14569071045262796,
+    0.016383860089169984,
+    0.0043202818660839975,
+    1.1400122933975851,
+    0.12479357627524487,
+    0.1336609379498948,
+    0.06300988988499802,
+    0.05718577112597286,
+    0.4871171711627197
+  ],
+  "value_scaler_mean": [
+    2.478857144032206
+  ],
+  "value_scaler_scale": [
+    0.9253779798596277
+  ],
+  "spectrum_scaler_mean": null,
+  "spectrum_scaler_scale": null,
+  "fractional_order_estimate": {
+    "local_whittle": 0.15033166685300173,
+    "gph": 0.17341685358952236,
+    "selected": 0.15033166685300173,
+    "bandwidth": 42,
+    "disagreement": 0.02308518673652063,
+    "unstable": false,
+    "clipped": false,
+    "bootstrap_std_local_whittle": null,
+    "bootstrap_std_gph": null
+  },
+  "fractional_coefficients": [
+    1.0,
+    -0.15033166110515594,
+    -0.063866026699543
+  ],
+  "gradnorm_final_weights": {
+    "value": 0.833190381526947,
+    "fractional": 1.1668095588684082
+  },
+  "gradnorm_initial_losses": {
+    "value": 1.0044808387756348,
+    "fractional": 0.9314796328544617
+  },
+  "gradnorm_initialization": "full training-split calibration before optimizer updates; active from the first training step",
+  "gradnorm_gradient_reuse": "one unweighted shared-decoder gradient per task; exact weighted norm obtained by multiplying by the positive task weight",
+  "matrix_preprocessing_cache": {
+    "scope": "current run_matrix call",
+    "feature_rankings": "shared across variants for the same seed and split",
+    "fractional_preprocessing": "shared across variants and seeds"
+  },
+  "locked_tuning": {
+    "objective": "mean purged-fold global value RMSE",
+    "direction": "minimize",
+    "horizon": 50,
+    "tuning_variant": "value_only",
+    "tuning_seed": 42,
+    "n_trials": 40,
+    "n_splits": 3,
+    "completed_trials": 25,
+    "pruned_trials": 15,
+    "pruner": {
+      "name": "MedianPruner",
+      "resource": "completed purged folds",
+      "n_startup_trials": 5,
+      "n_warmup_steps": 1,
+      "interval_steps": 1,
+      "monitor": "running mean original-scale value_rmse"
+    },
+    "feature_ranking_cache": {
+      "enabled": true,
+      "scope": "in-memory per tuning run, lookback, fold, and seed",
+      "cached_lookbacks": [
+        3,
+        4,
+        5,
+        6,
+        8,
+        10
+      ]
+    },
+    "best_value": 0.5458653370539347,
+    "parameters": {
+      "encoder_units": 64,
+      "decoder_units": 64,
+      "dropout": 0.1,
+      "learning_rate": 0.0006419892064825209,
+      "batch_size": 16,
+      "lookback": 10,
+      "top_k": 10
+    },
+    "config_checksum": "f2fb413dcebb72d4d6009645749749522162ae47fa2a51141032a9caa67758b0",
+    "config_snapshot": {
+      "RAW_FOLDER": "data_lake/raw/source_data",
+      "BRONZE_FOLDER": "data_lake/bronze/combined",
+      "CURATED_FOLDER": "data_lake/curated/time_series",
+      "FEATURES_FOLDER": "data_lake/features/mfdfa",
+      "FORECASTING_FOLDER": "data_lake/forecasts",
+      "TS_ANALYSIS_FOLDER": "data_lake/artifacts/analysis",
+      "MANIFEST_FOLDER": "data_lake/manifests",
+      "RAW_SOURCE_FILE_PREFIXES": [
+        "monitoring",
+        "monitiring"
+      ],
+      "DATASET_NAME": "surface-water-monitoring",
+      "API_BASE_URL": "https://data.gov.ua/api/3/action/",
+      "INDICATOR": "BSK5",
+      "RIVER_NAME_COLUMN": "Riverbas_Name",
+      "COLUMN_FILTER": "Post_Name",
+      "ROW_FILTER": "канал Дніпро-Донбас, 0,5 км",
+      "RIVER_NAME_VALUE_ENG": "Dnipro",
+      "HORIZON": 50,
+      "EVALUATION_ORIGIN_COUNT": 5,
+      "EVALUATION_ORIGIN_STRIDE": 10,
+      "MIN_TRAIN_ORIGINS": 50,
+      "MFDFA_WINDOW": 150,
+      "FIELDS_TO_RETRIEVE": [
+        "Post_ID",
+        "Post_Name",
+        "Post_Code",
+        "Riverbas_Name",
+        "WaterLab_Name",
+        "Latitude",
+        "Longitude",
+        "Controle_Date",
+        "Azot",
+        "BSK5",
+        "Zavisli",
+        "Kisen",
+        "Sulfat",
+        "Hlorid",
+        "Amoniy",
+        "Nitrat",
+        "Nitrit",
+        "Fosfat",
+        "SPAR",
+        "Permanganat",
+        "HSK",
+        "Fitoplan",
+        "Atrazin",
+        "Simazin"
+      ]
+    }
+  },
+  "experiment_id": "multistep_fractal_ablation_v1",
+  "variant": "value_fractional",
+  "seed": 123,
+  "config_checksum": "f2fb413dcebb72d4d6009645749749522162ae47fa2a51141032a9caa67758b0"
+}

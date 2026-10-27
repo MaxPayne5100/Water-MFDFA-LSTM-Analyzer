@@ -1,0 +1,200 @@
+{
+  "scientific_role": "Value-only baseline: value RMSE",
+  "horizon": 10,
+  "rmse_aggregation": "global over all samples and horizon positions",
+  "evaluation_value_rmse": 0.8316676616668701,
+  "evaluation_origin_count": 5,
+  "evaluation_origin_stride": 10,
+  "evaluation_origins": [
+    360,
+    370,
+    380,
+    390,
+    400
+  ],
+  "evaluation_policy": "one fixed model trained before the first rolling origin; no refit inside the evaluation period",
+  "parameters": {
+    "encoder_units": 64,
+    "decoder_units": 64,
+    "dropout": 0.1,
+    "learning_rate": 0.00018136233258495468,
+    "batch_size": 16,
+    "lookback": 10,
+    "top_k": 12
+  },
+  "final_epochs": 1,
+  "timing": {
+    "clock": "time.perf_counter monotonic wall clock",
+    "unit": "seconds",
+    "scope": "model build, GradNorm calibration when applicable, and model.fit; excludes preprocessing, prediction, and artifact publication",
+    "cross_validation_training_seconds": 13.301131799002178,
+    "final_training_seconds": 1.709116467001877,
+    "total_training_seconds": 15.010248266004055,
+    "cross_validation_trained_epochs": 64,
+    "final_trained_epochs": 1,
+    "total_trained_epochs": 65
+  },
+  "selected_features": [
+    "H",
+    "Entropy",
+    "Delta_H",
+    "Skew",
+    "Delta_alpha",
+    "Width",
+    "Mean",
+    "Kurtosis",
+    "Volatility",
+    "A",
+    "beta",
+    "B"
+  ],
+  "feature_ranking": {
+    "method": "purged_permutation",
+    "training_samples": 144,
+    "validation_samples": 39
+  },
+  "feature_scaler_mean": [
+    0.9408893748496969,
+    1.7333668949082495,
+    0.7880763006707032,
+    2.748863893561065,
+    0.983035726659,
+    4.063472622136275,
+    2.6635847172389426,
+    17.677285028994085,
+    1.3456566794464986,
+    2.773378999655445,
+    0.7677036360061417,
+    0.18055482108053791
+  ],
+  "feature_scaler_scale": [
+    0.08960938285466967,
+    0.16321870943668443,
+    0.12448120873729072,
+    1.200317418292536,
+    0.13636690613007582,
+    1.494051722325855,
+    0.10205227330983417,
+    9.739516085450955,
+    0.3050453018971578,
+    0.5180496515840867,
+    0.16395696875451027,
+    0.1202576971748587
+  ],
+  "value_scaler_mean": [
+    2.633229172043502
+  ],
+  "value_scaler_scale": [
+    0.9397639306963699
+  ],
+  "spectrum_scaler_mean": null,
+  "spectrum_scaler_scale": null,
+  "fractional_order_estimate": null,
+  "fractional_coefficients": null,
+  "gradnorm_final_weights": null,
+  "gradnorm_initial_losses": null,
+  "gradnorm_initialization": null,
+  "gradnorm_gradient_reuse": null,
+  "matrix_preprocessing_cache": {
+    "scope": "current run_matrix call",
+    "feature_rankings": "shared across variants for the same seed and split",
+    "fractional_preprocessing": "not applicable"
+  },
+  "locked_tuning": {
+    "objective": "mean purged-fold global value RMSE",
+    "direction": "minimize",
+    "horizon": 10,
+    "tuning_variant": "value_only",
+    "tuning_seed": 42,
+    "n_trials": 40,
+    "n_splits": 3,
+    "completed_trials": 13,
+    "pruned_trials": 27,
+    "pruner": {
+      "name": "MedianPruner",
+      "resource": "completed purged folds",
+      "n_startup_trials": 5,
+      "n_warmup_steps": 1,
+      "interval_steps": 1,
+      "monitor": "running mean original-scale value_rmse"
+    },
+    "feature_ranking_cache": {
+      "enabled": true,
+      "scope": "in-memory per tuning run, lookback, fold, and seed",
+      "cached_lookbacks": [
+        3,
+        4,
+        5,
+        6,
+        8,
+        10
+      ]
+    },
+    "best_value": 0.8402568896611532,
+    "parameters": {
+      "encoder_units": 64,
+      "decoder_units": 64,
+      "dropout": 0.1,
+      "learning_rate": 0.00018136233258495468,
+      "batch_size": 16,
+      "lookback": 10,
+      "top_k": 12
+    },
+    "config_checksum": "0e7ee766988b156ae1181fd2833ab32e787b1974e1b4fc464e0e8e5c94211dda",
+    "config_snapshot": {
+      "RAW_FOLDER": "data_lake/raw/source_data",
+      "BRONZE_FOLDER": "data_lake/bronze/combined",
+      "CURATED_FOLDER": "data_lake/curated/time_series",
+      "FEATURES_FOLDER": "data_lake/features/mfdfa",
+      "FORECASTING_FOLDER": "data_lake/forecasts",
+      "TS_ANALYSIS_FOLDER": "data_lake/artifacts/analysis",
+      "MANIFEST_FOLDER": "data_lake/manifests",
+      "RAW_SOURCE_FILE_PREFIXES": [
+        "monitoring",
+        "monitiring"
+      ],
+      "DATASET_NAME": "surface-water-monitoring",
+      "API_BASE_URL": "https://data.gov.ua/api/3/action/",
+      "INDICATOR": "BSK5",
+      "RIVER_NAME_COLUMN": "Riverbas_Name",
+      "COLUMN_FILTER": "Post_Name",
+      "ROW_FILTER": "канал Дніпро-Донбас, 0,5 км",
+      "RIVER_NAME_VALUE_ENG": "Dnipro",
+      "HORIZON": 10,
+      "EVALUATION_ORIGIN_COUNT": 5,
+      "EVALUATION_ORIGIN_STRIDE": 10,
+      "MIN_TRAIN_ORIGINS": 50,
+      "MFDFA_WINDOW": 150,
+      "FIELDS_TO_RETRIEVE": [
+        "Post_ID",
+        "Post_Name",
+        "Post_Code",
+        "Riverbas_Name",
+        "WaterLab_Name",
+        "Latitude",
+        "Longitude",
+        "Controle_Date",
+        "Azot",
+        "BSK5",
+        "Zavisli",
+        "Kisen",
+        "Sulfat",
+        "Hlorid",
+        "Amoniy",
+        "Nitrat",
+        "Nitrit",
+        "Fosfat",
+        "SPAR",
+        "Permanganat",
+        "HSK",
+        "Fitoplan",
+        "Atrazin",
+        "Simazin"
+      ]
+    }
+  },
+  "experiment_id": "multistep_fractal_ablation_v1",
+  "variant": "value_only",
+  "seed": 42,
+  "config_checksum": "0e7ee766988b156ae1181fd2833ab32e787b1974e1b4fc464e0e8e5c94211dda"
+}

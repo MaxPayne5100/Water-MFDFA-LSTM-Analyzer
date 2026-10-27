@@ -1,0 +1,3 @@
+candidate,paired_seeds,paired_origins,paired_seed_origins,mean_origin_rmse_delta_candidate_minus_baseline,median_origin_rmse_delta_candidate_minus_baseline,wins_lower_origin_rmse,win_rate_lower_origin_rmse,mean_origin_rmse_change_pct,inference_note
+value_fractional,5,5,25,-0.00944011802486961,-0.0027128866825016917,18,0.72,-0.7550472778801123,Descriptive matched seed-origin effect; no independence-based p-value because rolling forecast windows overlap.
+value_fractional_spectrum,5,5,25,-0.017957679053987496,0.002368406877962248,10,0.4,-1.3512268210537577,Descriptive matched seed-origin effect; no independence-based p-value because rolling forecast windows overlap.
